@@ -4,20 +4,23 @@ const structjson = require('./structjson');
 const config = require('../config/keys');
 const {struct} = require('pb-util');
 
-const projectID = config.googleProjectID;
+
 
 const credentials = {
     client_email: config.googleClientEmail,
     private_key: config.googlePrivateKey
 }
 
-const sessionClient = new dialogflow.SessionsClient({projectID, credentials});
+const projectID = config.googleProjectID;
+const sessionID = config.dialogFlowSessionID;
 
-const sessionPath = sessionClient.sessionPath(config.googleProjectID, config.dialogFlowSessionID);
+const sessionClient = new dialogflow.SessionsClient({projectID, credentials});
+//const sessionPath = sessionClient.sessionPath(projectID, sessionID);
 
 module.exports = {
-    textQuery: async function(text, parameters = {}) {
+    textQuery: async function(text, userID, parameters = {}) {
         let self = module.exports;
+        const sessionPath = sessionClient.sessionPath(projectID, sessionID + userID);
         const request = {
             session: sessionPath,
             queryInput: {
@@ -37,8 +40,9 @@ module.exports = {
          responses = await self.hendleActoin(responses);
          return responses;
     },
-    eventQuery: async function(event, parameters = {}) {
+    eventQuery: async function(event, userID,  parameters = {}) {
         let self = module.exports;
+        const sessionPath = sessionClient.sessionPath(projectID, sessionID + userID);
         const request = {
             session: sessionPath,
             queryInput: {
