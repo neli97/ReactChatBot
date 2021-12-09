@@ -7,6 +7,10 @@ import About from './pages/About';
 import Shop from './shop/Shop';
 import Chatbot from './chatbot/Chatbot';
 
+import '../css/style.css';
+import '../js/fuctions.js';
+import Footer from './Footer';
+
 const App = () => (
         <BrowserRouter>
             <div>
@@ -17,7 +21,9 @@ const App = () => (
                     <Route exact path="/shop" element={<Shop/>} />
                 </Routes>
             <Chatbot/>
+            <Footer/>
             </div>
+            
         </BrowserRouter>
     )
 

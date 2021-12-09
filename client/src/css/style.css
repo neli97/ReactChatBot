@@ -1,0 +1,139 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.close-chat {
+    width:400px;
+    position: fixed;
+    bottom: 0; 
+    right: 0;
+    border: 1px solid lightgray;
+    z-index: 1;
+}
+
+.type-message {
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%; 
+    width: 90%; 
+}
+
+
+
+.nav-wrapper {
+    background-color: #41403E;
+}
+
+.grey.lighten-5 {
+    background-color: transparent !important;
+}
+
+.chat-bot-wrapper {
+    height: 500px;
+    width: 400px;
+    position: fixed !important;
+    bottom: 0;
+    right: 0;
+    z-index: 1 !important;
+    border: 1px solid transparent !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 8%, rgba(212,211,211,1) 89%);
+    -webkit-box-shadow: -3px 0px 21px -5px rgba(0,0,0,0.82); 
+    box-shadow: -3px 0px 17px -5px rgba(0,0,0,0.54);
+}
+
+.page-footer, .header-color {
+    background-color: #adaba8;
+}
+
+.page-footer .col.l6.s12 {
+    padding:  0 5rem;
+}
+
+.footer-copyright .container {
+    padding-left: 5rem;
+}
+
+.brand-logo {
+    margin-left: 2rem;
+}
+
+.aling-ms-cht {
+    display: flex;
+    align-items: center;
+}
+
+
+.banner-box {
+    position: relative;
+}
+
+.content-wrapper-home img:first-of-type {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+.enjoy-img {
+    position: absolute;
+    top: 0;
+    left: 83px;
+    z-index: 1;
+}
+
+.brand-logo img {
+    width: 40%;
+    margin-top: 3px;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.content-box-main {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.content-wrapper-home .card .card-image img {
+    height: 256px;
+}
+
+.content-box-main .card-title {
+    font-weight: 700;
+}
+
+.content-wrapper-home .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.see-more {
+    padding: 0 5px;
+    margin-bottom: 1rem;
+}
+
+.more-cr {
+    padding: 13px 45px;
+    background-color: #41403e;
+    color: #fff;
+    border-radius: 21px;
+}
