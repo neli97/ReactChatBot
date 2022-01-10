@@ -24,7 +24,8 @@ class Chatbot extends Component {
         
         this.state = {
             messages: [],
-            showBot: true
+            showBot: true,
+            shopWelcomeSent: false
         };
 
         if (cookies.get('userID') === undefined) {
@@ -88,8 +89,22 @@ class Chatbot extends Component {
         this.setState({showBot: false});
     }
 
-    componentDidMount() {
+    resolveAfterXSeconds(x) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x);
+            }, x * 1000);
+        })
+    }
+
+     async componentDidMount() {
         this.df_event_query('Welcome');
+
+        if(window.location.pathname === '/shop') {
+            await this.resolveAfterXSeconds(2);
+            this.df_event_query('WELCOME_SHOP');
+            this.setState({ shopWelcomeSent: true });
+        }
     }
 
     _handleQuickReplyPayload(event, payload, text) {

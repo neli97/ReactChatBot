@@ -16,9 +16,11 @@
   "author": "Neli Zarkova",
   "license": "ISC",
   "dependencies": {
+    "actions-on-google": "^3.0.0",
     "body-parser": "^1.19.0",
     "dialogflow": "^1.2.0",
     "express": "^4.17.1",
+    "mongoose": "^6.1.5",
     "pb-util": "^1.0.2"
   },
   "devDependencies": {

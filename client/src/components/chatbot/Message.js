@@ -6,7 +6,7 @@ const Message = (props) => (
     	    <div className="row valig-wrapper aling-ms-cht">
                 {props.speaks==='bot' &&
                 <div className="col s2">
-                    <a className="btn-floating btn-large waves-effect waves-light lighten-3">
+                    <a className="btn-floating btn-large waves-effect orange darken-2">
                         {props.speaks}
                     </a>
                 </div>
@@ -18,7 +18,7 @@ const Message = (props) => (
                 </div>
                 {props.speaks==='me' &&
                 <div className="col s2">
-                    <a className="btn-floating btn-large waves-effect waves-light blue lighten-3">
+                    <a className="btn-floating btn-large waves-effect waves-light ans-me grey darken-2">
                         {props.speaks}
                     </a>
                 </div>
