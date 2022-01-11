@@ -64,16 +64,16 @@ module.exports = {
     },
 
     hendleActoin: function(responses) {
-       /* let queryResult = responses[0].queryResult;
-        let self = module.exports;
+       //let queryResult = responses[0].queryResult;
+       // let self = module.exports;
 
-        switch (queryResult.action) {
-            case 'recommendcourses-yes':
-                if(queryResult.allRequiredParamsPresent) {
-                    self.saveRegistration(queryResult.parameters.fields);
-                }
-                break;
-        }*/
+       // switch (queryResult.action) {
+           // case 'recommendcourses-yes':
+                //if(queryResult.allRequiredParamsPresent) {
+                //    self.saveRegistration(queryResult.parameters.fields);
+               // }
+               // break;
+       // }
         return responses;
     }/*,
     saveRegistration: async function(fields) {

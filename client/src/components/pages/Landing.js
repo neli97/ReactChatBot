@@ -17,7 +17,7 @@ const Landing = () => (
                     <img className="enjoy-img" alt="love code" src={enjoyCode}/>
                 </div>
                 <div className="content-box-main">
-                    <h1 className="test">Selling you great stuff</h1>
+                    <h1 className="title-home-page">Some of our courses</h1>
                     <div class="row">
                         <div class="col s4">
                             <div class="row">
@@ -31,7 +31,7 @@ const Landing = () => (
                                     <p>PHP for Beginners: learn everything you need to become a professional PHP developer with practical exercises & projects.</p>
                                     </div>
                                     <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">learn More</a>
                                     </div>
                                 </div>
                                 </div>
@@ -49,7 +49,7 @@ const Landing = () => (
                                     <p>java Programming Course for Beginners to Object Oriented Programming. BONUS: Build REST API with Spring Boot.</p>
                                     </div>
                                     <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">learn More</a>
                                     </div>
                                 </div>
                                 </div>
@@ -67,7 +67,7 @@ const Landing = () => (
                                     <p>Master <strong>C#</strong> fundamentals in 6 hours - The most popular course with 50,000+ students, packed with tips and exercises!</p>
                                     </div>
                                     <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">learn More</a>
                                     </div>
                                 </div>
                                 </div>

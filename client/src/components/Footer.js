@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./assets/logo2.png";
+import logo from "./assets/logo.png";
 
 const Footer = () => {
     return (
@@ -9,21 +9,19 @@ const Footer = () => {
             <div class="row">
               <div class="col l6 s12">
               <Link to={'/'} className="footer-logo"><img src={logo} /></Link>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text have-question">Still have questions?</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:neli.zarkova@abv.bg">E-mail: neli.zarkova@abv.bg</a></li>
+                  <li><a class="grey-text text-lighten-3" href="tel:0899520719">Phone: +359 899 520 719</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2021 Chatbot
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2021 Connect
             </div>
           </div>
         </footer>

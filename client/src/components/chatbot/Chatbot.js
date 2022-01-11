@@ -4,6 +4,9 @@ import Cookies from 'universal-cookie';
 import { v4 as uuid } from 'uuid';
 import QuickReplies from "./QuickReplies";
 
+import imgbot from '../assets/imagebot.png';
+import logo from "../assets/logo.png";
+
 import Message from "./Message";
 import Card from "./Card";
 
@@ -186,7 +189,7 @@ class Chatbot extends Component {
             <div className="container chat-bot-wrapper" style={{ height: 500, width: 400, position: 'absolute', bottom: 0, right: 0, border: '1px solid lightgray'}}>
                 <nav>
                     <div className="nav-wrapper">
-                        <a className="brand-logo">Chatbot</a>
+                        <a className="brand-logo brandlogo-is-open"><img className="icon-chatbot-is-open" src={logo}/></a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
                             <li><a onClick={this.hide}>Close</a></li>
                         </ul>
@@ -209,9 +212,13 @@ class Chatbot extends Component {
                 <div className="container close-chat" style={{ minHeight: 40, maxHeight: 500}}>
                     <nav>
                         <div className="nav-wrapper">
-                            <a className="brand-logo">Chatbot</a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a onClick={this.show}>Show</a></li>
+                            <li>
+                                <a className="click-show" onClick={this.show}>
+                                    <img className="icon-chatbot-click" src={imgbot}/>
+                                    <span className="red-pint"><em>1</em></span>
+                                </a>
+                            </li>
                         </ul>
                         </div>
                     </nav>

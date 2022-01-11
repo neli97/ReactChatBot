@@ -24,7 +24,6 @@ body{
     position: fixed;
     bottom: 0; 
     right: 0;
-    border: 1px solid lightgray;
     z-index: 1;
 }
 
@@ -60,19 +59,19 @@ body{
 }
 
 .page-footer, .header-color {
-    background-color: #adaba8;
+    background-color: #41403e;
 }
 
 .page-footer .col.l6.s12 {
-    padding:  0 5rem;
+    padding:  0 8.5rem;
 }
 
 .footer-copyright .container {
-    padding-left: 5rem;
+    max-width: 1650px;
 }
 
 .brand-logo {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .aling-ms-cht {
@@ -99,7 +98,7 @@ body{
 }
 
 .brand-logo img {
-    width: 40%;
+    width: 62%;
     margin-top: 3px;
 }
 
@@ -139,3 +138,292 @@ body{
     color: #fff;
     border-radius: 21px;
 }
+
+.card-panel > div > div >a {
+    background-color: #f57c00 !important;
+}
+
+#quick-replies > a:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 3px;
+}
+
+.valign-wrapper {
+    align-items: start;
+}
+
+.more-cr:hover {
+    background-color:#f57c00;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    font-size: 18px;
+}
+
+.title-home-page {
+    font-size: 52px;
+}
+
+.icon-chatbot-click {
+    width: 100px;
+    height: 100px;
+}
+
+.click-show {
+    position: relative;
+}
+
+.red-pint {
+    position: absolute;
+    background: #ab220c;
+    left: 16px;
+    padding: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 31px;
+    /* margin-bottom: 1rem; */
+    padding: 18px;
+    top: 13px;
+
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.red-pint > em { 
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+font-style: normal;
+
+
+}
+
+
+.close-chat  .nav-wrapper, .close-chat > nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.type-message {
+    margin-left: 20px !important;
+    color: #fff;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 4px solid #f57c00;
+}
+
+.type-message::placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+.chat-bot-wrapper {
+    background: #5a5454eb !important;
+}
+
+.black-text {
+    color: #fff !important;
+}
+
+.grey.darken-2 {
+    background-color: #282828 !important;
+}
+
+.have-question {
+    font-size: 20px;
+}
+
+.content-wrapper-about {
+    max-width: 1650px;
+    margin-bottom: 7px;
+}
+
+.box-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+
+.box-wrapper-left {
+    position: relative;
+}
+
+.some-content {
+    padding: 20px 20px 20px 0;
+}
+
+.txt-description {
+    position: absolute;
+    background: #f1f1f1;
+    max-width: 1028px;
+    left: 0;
+    top: 132px;
+    font-size: 20px;
+    padding: 35px 45px 35px 45px;
+    line-height: 40px;
+}
+
+.txt-description-left {
+    background: #f1f1f1;
+    max-width: 1028px;
+    font-size: 20px;
+    padding: 35px 45px 35px 45px;
+    line-height: 40px;
+}
+
+.icon-chatbot-is-open {
+    width: 46% !important;
+    height: 100% !important;
+    margin-top: 13px !important;
+}
+
+.brandlogo-is-open {
+    width: 300px;
+}
+
+.some-content-left {
+    width: 450px;
+    height: 450px;
+    background: #F76236;
+    padding: 74px;
+}
+
+.some-content-left > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 222px;
+}
+
+.txt-description-left {
+    position: absolute;
+    top: 100px;
+    left: 24%;
+}
+
+.motivashion-txt {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.some-content-tr {
+    background: #F76236;
+    padding: 50px 5.5rem 50px 11rem;
+}
+
+.some-content-tr > img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.wrap-last {
+    margin-bottom: 3.5rem;
+}
+
+.footer-copyright > div {
+    border-top: 1px solid #F57C00;
+    padding-top: 20px;
+}
+
+.month {
+    padding: 71px 25px 20px 25px;
+    width: 100%;
+    background: #F76236;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 33px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+    font-size: 21px;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+    font-size: 19px;
+  }
+  
+  .days li .active {
+    padding: 5px;
+    background: #F76236;
+    color: white !important;
+    font-size: 25px;
+  }
+
+  
+  .year-master {
+      color: #fff;
+      font-size: 25px;
+  }
+
+  .calendar-wrapper-box {
+      position: relative;
+      padding-top: 16rem;
+  }
+
+  .text-des-masterclass {
+    background: #f1f1f1;
+    font-size: 20px;
+    padding: 35px 45px 35px 45px;
+    line-height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 62px;
+    left: 13%;
+  }
+  

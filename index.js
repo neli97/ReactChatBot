@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const { MongoClient } = require('mongodb');
 
 //app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -24,6 +25,36 @@ MongoClient.connect(url, function(err, db) {
  );
 });
 */
+console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+
+// connect to your cluster
+
+/*addToDB();
+async function addToDB()
+{
+    
+    const uri = "mongodb+srv://neli:MqGFL7zznwcP2h3@cluster0.60obe.mongodb.net/test?retryWrites=true&w=majority";
+    const client = await new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    // specify the DB's name
+    await client.connect(err => {
+        console.log("MongoDB connected ");
+        const db = client.db('test');
+        // execute find query
+        
+        db.collection("registration").insertOne({
+            "name" : "nePOOP",
+            "address" : 24,
+            "phone" : "gender",
+            "email": "neli.zarkova@abv.bg"
+       })
+        console.log("SUCC ADD INTO DB");
+        // close connection
+    });
+    
+    client.close();
+}
+*/
+
 
 app.use(bodyParser.json())
 
