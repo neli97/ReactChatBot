@@ -56,7 +56,16 @@ async function addToDB()
 */
 
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+
+if(process.env.NODE_ENV == 'production') {
+    app.use(express.static(client/build));
+
+    const path = require('path');
+    app.get('*', (req, res) => {
+        red.sendFiles(path.resolve(__dirname, 'build', 'index.html'));
+    })
+}
 
 require('./routes/dialogFlowRoutes')(app);
 
